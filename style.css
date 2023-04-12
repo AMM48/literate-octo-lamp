@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: monospace;
+    background-color: #333;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    margin: 5rem 0 2rem 0;
+    font-size: 5rem;
+}
+
+.container {
+    background-color: #ccc;
+    color: #333;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin-bottom: 10rem;
+    width: 90%;
+    padding: 5rem 10rem 5rem 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 7rem;
+    /* flex-direction: column; */
+}
+
+p{
+    /* margin: 10rem; */
+    font-size: 3rem;
+}
+
+.title {
+    color: #940000;
+}
+
+.winner::before {
+    content: "Winner";
+    display: block;
+    color: #940000;
+    position: relative;
+    font-size: 2.1rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.ko::after {
+    content: "Via KO";
+    display: block;
+    color: #333;
+    position: relative;
+    font-size: 1.9rem;
+    text-align: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.una::after {
+    content: "Via Decision-Unanimous";
+    white-space: pre;
+    display: block;
+    color: #333;
+    position: relative;
+    font-size: 1.9rem;
+    text-align: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#main-card, #prelims, #early-prelims{
+    width: 90%;
+    background-color: #333;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.19);
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+h2 {
+    margin:5rem;
+    font-size: 3rem;
+}
+
+input {
+    align-self: flex-start;
+    margin-left: 10rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    width: 20%;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    width: 20%;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center
+}
+
+select:focus{
+    outline: none;
+}

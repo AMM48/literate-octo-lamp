@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>UFC-287 Fights</title>
+</head>
+
+<body>
+    <h1><span class="title">UFC</span>-287 Fights</h1>
+    <input type="search" id="fightSearch" name="search" placeholder="Search for Fight">
+    <select name="card" id="card" onchange="changeDisplay()">
+        <option value="All-Card">All Cards</option>
+        <option value="Main-Card">Main Card</option>
+        <option value="Prelims">Prelims</option>
+        <option value="Early-Prelims">Early Prelims</option>
+    </select>
+    <div id="main-card">
+        <h2>Main Card</h2>
+        <div class="container">
+            <p>ALEX PRERIERA</p>
+            <p>VS</p>
+            <p class="winner ko">ISREAL ADESANYA</p>
+        </div>
+        <div class="container">
+            <p class="winner una">GILBERT BURNS</p>
+            <p>VS</p>
+            <p>JORGE MASVIDAL</p>
+        </div>
+        <div class="container">
+            <p class="winner ko">ROB FONT</p>
+            <p>VS</p>
+            <p>ADRIAN YANEZ</p>
+        </div>
+    </div>
+    <div id="prelims">
+        <h2>Prelims Card</h2>
+        <div class="container">
+            <p>CHRIS CURTIS</p>
+            <p>VS</p>
+            <p class="winner una">KELVIN GASTELUM</p>
+        </div>
+        <div class="container">
+            <p>GERALD MEERSCHAERT</p>
+            <p>VS</p>
+            <p class="winner ko">JOE PYFER</p>
+        </div>
+    </div>
+    <div id="early-prelims">
+        <h2>Early Prelims Card</h2>
+        <div class="container">
+            <p class="winner una">IGNACIO BAHAMONDES</p>
+            <p>VS</p>
+            <p>TREY OGDEN</p>
+        </div>
+        <div class="container">
+            <p>SHAYILAN NUERDANBIEKE</p>
+            <p>VS</p>
+            <p class="winner ko">STEVE GARCIA</p>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+
+</html>
